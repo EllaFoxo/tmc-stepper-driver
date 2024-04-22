@@ -1,0 +1,35 @@
+[package]
+edition = "2021"
+name = "tmc-stepper-driver"
+version = "0.1.0"
+authors = ["Ella Fox <ella@fox.gal>"]
+resolver = "2"
+description = "Trinamic stepper motor drivers for embedded firmware development"
+
+[features]
+default = []
+tmc2130 = []
+tmc2160 = []
+tmc2208 = []
+tmc2209 = []
+tmc2224 = []
+tmc2660 = []
+tmc5130 = []
+tmc5160 = []
+tmc5161 = []
+
+[dependencies]
+defmt = "0.3"
+defmt-rtt = "0.4"
+
+cortex-m = { version = "0.7.6" }
+cortex-m-rt = "0.7.0"
+embedded-hal = "1.0.0"
+embassy-embedded-hal = "0.1.0"
+panic-probe = { version = "0.3", features = ["print-defmt"] }
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+debug = 2
