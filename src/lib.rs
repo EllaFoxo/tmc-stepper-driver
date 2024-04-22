@@ -87,9 +87,10 @@ pub trait Driver {
     /// Configure the motor off time.
     ///
     /// The off time setting is a duration of the slow decay phase `CLK = 24 + 32*TOFF`.
-    /// %0000 - Driver disable, all bridges off
-    /// %0001 - Use only with TBL >= 2
-    /// %0010...%1111 - 2-15
+    ///
+    /// - %0000 - Driver disable, all bridges off
+    /// - %0001 - Use only with TBL >= 2
+    /// - %0010...%1111 - 2-15
     ///
     /// For more information, please see the Trinamic datasheet for your given driver.
     fn toff(off_time: u8);
