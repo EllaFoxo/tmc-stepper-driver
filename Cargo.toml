@@ -1,7 +1,7 @@
 [package]
 edition = "2021"
 name = "tmc-stepper-driver"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Ella Fox <ella@fox.gal>"]
 resolver = "2"
 description = "Trinamic stepper motor drivers for embedded firmware development"
