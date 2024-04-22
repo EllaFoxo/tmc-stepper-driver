@@ -1,5 +1,4 @@
 #![no_std]
-#![no_main]
 
 #[cfg(feature = "tmc2209")]
 pub mod tmc2209;
